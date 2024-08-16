@@ -1,0 +1,37 @@
+/* Estilos personalizados adicionales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6; /* Gris claro */
+    color: #1f2937; /* Gris oscuro */
+}
+
+/* Estilos para botones personalizados */
+button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2563eb; /* Azul más oscuro al pasar el mouse */
+    color: #ffffff;
+}
+
+/* Estilos para entradas de texto */
+input {
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border-color: #3b82f6; /* Azul claro al enfocar */
+    outline: none;
+}
+
+/* Ocultar elementos con la clase hidden */
+.hidden {
+    display: none;
+}
+
+/* Estilos para los pre (resultado de historial y lista de productos) */
+pre {
+    font-size: 0.9rem;
+    white-space: pre-wrap; /* Permite el ajuste de línea dentro del pre */
+}

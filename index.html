@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum DApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-800 p-6">
+    <h1 class="text-3xl font-bold mb-6">Interacción con el Contrato Inteligente</h1>
+    <button id="connect-wallet" class="bg-blue-500 text-white py-2 px-4 rounded">Conectar Billetera</button>
+    
+    <div id="wallet-info" class="hidden mt-4">
+        <p>Dirección de la billetera: <span id="wallet-address" class="font-mono"></span></p>
+    </div>
+
+    <div id="contract-interaction" class="hidden mt-6">
+        <h2 class="text-xl font-semibold mb-2">Registrar Producto</h2>
+        <input type="text" id="registrar-producto" placeholder="Nombre del producto" class="border p-2 rounded w-full">
+        <button id="registrar-producto-button" class="bg-green-500 text-white py-2 px-4 rounded mt-2">Registrar</button>
+        
+        <h2 class="text-xl font-semibold mt-6 mb-2">Actualizar Estado</h2>
+        <input type="number" id="actualizar-estado-id" placeholder="ID del producto" class="border p-2 rounded w-full">
+        <input type="text" id="actualizar-estado-ubicacion" placeholder="Ubicación" class="border p-2 rounded w-full mt-2">
+        <button id="actualizar-estado-button" class="bg-yellow-500 text-white py-2 px-4 rounded mt-2">Actualizar Estado</button>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">Obtener Historial</h2>
+        <input type="number" id="obtener-historial-id" placeholder="ID del producto" class="border p-2 rounded w-full">
+        <button id="obtener-historial-button" class="bg-purple-500 text-white py-2 px-4 rounded mt-2">Obtener Historial</button>
+        <pre id="historial-resultado" class="bg-gray-200 p-4 rounded mt-4"></pre>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">Obtener Lista de Productos</h2>
+        <button id="obtener-lista-button" class="bg-red-500 text-white py-2 px-4 rounded">Obtener Lista</button>
+        <pre id="lista-productos" class="bg-gray-200 p-4 rounded mt-4"></pre>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
